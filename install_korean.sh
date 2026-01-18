@@ -140,12 +140,12 @@ install_fonts() {
             ;;
         dnf)
             # Fedora
-            dnf install -y \
+			dnf install -y \
                 google-noto-sans-cjk-ttc-fonts \
-                google-noto-serif-cjk-ttc-fonts \
-                naver-nanum-fonts-all \
-                naver-nanum-gothic-fonts \
-                naver-nanum-myeongjo-fonts
+                google-noto-serif-cjk-ttc-fonts
+            dnf install fontconfig -y
+			curl -o nanumfont.zip http://cdn.naver.com/naver/NanumFont/fontfiles/NanumFont_TTF_ALL.zip
+			unzip -d /usr/share/fonts/nanum nanumfont.zip
             ;;
         yum)
             # CentOS, RHEL
