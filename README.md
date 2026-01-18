@@ -12,7 +12,7 @@ chmod +x install_korean.sh
 
 실행:
 
-bashsudo ./install_korean.sh
+sudo ./install_korean.sh
 설치되는 항목:
 
 한글 폰트:
