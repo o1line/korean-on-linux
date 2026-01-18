@@ -2,13 +2,13 @@
 
 스크립트 저장:
 
-bashwget https://example.com/install_korean.sh
+git clone https://github.com/o1line/korean-on-linux
 # 또는
-curl -O https://example.com/install_korean.sh
+curl -O https://github.com/o1line/korean-on-linux
 
 실행 권한 부여:
 
-bashchmod +x install_korean.sh
+chmod +x install_korean.sh
 
 실행:
 
